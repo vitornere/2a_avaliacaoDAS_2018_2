@@ -22,4 +22,8 @@ public class CalculaInvestimento {
         Double diasAno = (double) dias / 365.0;
         return ( diasAno * (juros/100) );
     }
+
+    public Double calculaImpostoDeRenda() {
+        return 3.14;
+    }
 }
