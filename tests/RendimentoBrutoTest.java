@@ -1,3 +1,5 @@
+import controller.CalculaInvestimento;
+import model.Investimento;
 import org.junit.Assert;
 import org.junit.Test;
 
