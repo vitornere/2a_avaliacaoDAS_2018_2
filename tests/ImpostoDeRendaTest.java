@@ -24,4 +24,14 @@ public class ImpostoDeRendaTest {
 
         Assert.assertEquals(2.96, impostoDeRenda, 0.01);
     }
+
+    @Test()
+    public void calculaImpostoDeRenda240DiasE3000() {
+        Investimento investimento = new Investimento(240, 3000.00, 9.0);
+        CalculaInvestimento calculaInvestimento = new CalculaInvestimento(investimento);
+
+        Double impostoDeRenda = calculaInvestimento.calculaImpostoDeRenda();
+
+        Assert.assertEquals(35.51, impostoDeRenda, 0.01);
+    }
 }
