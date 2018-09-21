@@ -24,4 +24,14 @@ public class RendimentoBrutoTest {
 
         Assert.assertEquals(13.15, rendimentoBruto, 0.01);
     }
+
+    @Test()
+    public void calculaRendimentoBruto240DiasE3000() {
+        Investimento investimento = new Investimento(240, 3000.00, 9.0);
+        CalculaInvestimento calculaInvestimento = new CalculaInvestimento(investimento);
+
+        Double rendimentoBruto = calculaInvestimento.calculaRendimentoBruto();
+
+        Assert.assertEquals(177.53, rendimentoBruto, 0.01);
+    }
 }
