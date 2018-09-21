@@ -7,7 +7,7 @@ public class RendimentoBrutoTest {
 
     @Test()
     public void calculaRendimentoBruto60DiasE1000() {
-        Investimento investimento = new Investimento(60, 1000.00);
+        Investimento investimento = new Investimento(60, 1000.00, 8.5);
         CalculaInvestimento calculaInvestimento = new CalculaInvestimento(investimento);
 
         Double rendimentoBruto = calculaInvestimento.calculaRendimentoBruto();
@@ -17,7 +17,7 @@ public class RendimentoBrutoTest {
 
     @Test()
     public void calculaRendimentoBruto120DiasE500() {
-        Investimento investimento = new Investimento(120, 500.0);
+        Investimento investimento = new Investimento(120, 500.0, 8.0);
         CalculaInvestimento calculaInvestimento = new CalculaInvestimento(investimento);
 
         Double rendimentoBruto = calculaInvestimento.calculaRendimentoBruto();
