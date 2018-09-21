@@ -12,6 +12,6 @@ public class RendimentoLiquidoTest {
 
         Double rendimentoLiquido = calculaInvestimento.calculaRendimentoLiquido();
 
-        Assert.assertEquals(1.0829, rendimentoLiquido, 0.01);
+        Assert.assertEquals(1.0829, rendimentoLiquido, 0.0001);
     }
 }

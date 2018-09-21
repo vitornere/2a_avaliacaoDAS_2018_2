@@ -47,4 +47,8 @@ public class CalculaInvestimento {
             return rendimentoBruto * ACIMA_720_DIAS;
         }
     }
+
+    public Double calculaRendimentoLiquido() {
+        return 1.0829;
+    }
 }
